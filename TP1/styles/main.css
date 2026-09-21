@@ -1,7 +1,12 @@
 
 header{
-    color: var(--primary-color);
+    background-color: rgb(0, 0, 156);
     position: sticky;
     top: 0;
     z-index: 10;
+}
+@media (min-width: 1024px){
+    .header{
+        display: flex; 
+    }
 }

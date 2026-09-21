@@ -1,0 +1,18 @@
+
+.hero{
+    background: linear-gradient(to bottom, #e3e8f0, #e9ecef)
+}
+
+.hero img{
+    max: with 100%;
+    height: auto;
+}
+
+@media (min-width: 1024px){
+    .hero{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+}
