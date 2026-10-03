@@ -1,11 +1,24 @@
 
 .hero{
-    background: linear-gradient(to bottom, #e3e8f0, #e9ecef)
+    background-color: #e3e8f0;
 }
 
 .hero img{
-    max: with 100%;
+    width: 100%;
+    max-width: 100%;
     height: auto;
+    border-radius: 16px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+/*je fait la couleur en bleu pour le titre de hero et vers pour l'apetit*/
+.titre-hero{
+    color:blue;
+}
+.appetit{
+    color:rgb(122, 196, 11);
+    font-size:1.3rem;
+    font-weight:bold;
 }
 
 @media (min-width: 1024px){
@@ -13,6 +26,50 @@
         display: flex;
         align-items: center;
         gap: 2rem;
+        padding: right 0; ;
     }
     
+    
+}
+.les-cartes{
+    display:flex;
+    padding: 4rem 6rem;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.une-carte{
+    background-color:white;
+    border-radius: 16px;
+    overflow: hidden; /*Empeche l'image  de d'epasser de l'arrondissement des bord*/
+    max-width: 360px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    
+}
+/*je faire ensorte que le button soit vers et je fait les cartes et leur contenu*/
+.btn{
+    display:inline-block;
+    justify-content: flex-start;
+    background-color: green;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 24px; /*ca augmente l'espace interieur*/
+    max-width: 70px;
+    border-radius: 25px;
+    color:white;
+}
+.les-cartes img{
+    width: 100%;
+    height: 200px;
+    min-height: 200px;
+    object-fit: cover;
+}
+.carte-contenu{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.carte-contenu h2{
+    color:  #0340aa;
 }
