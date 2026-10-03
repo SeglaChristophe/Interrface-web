@@ -4,10 +4,65 @@ header{
     position: sticky;
     top: 0;
     z-index: 10;
-    
+    display: flex; /*ca place tous les <li> cote a cote sur la meme ligne */
+    justify-content: space-between;
+    aligne-items: center;
+    color: white; /*permet de mettre les texte en blanc*/ 
+    padding: 1.5rem 3rem;
+}
+header nav a { /*je change la couleurt des textes specifiquement pour les liens*/
+    color: white;
+    text-decoration: none; /*ici j'enleve les soulignemenet*/
+
+}
+header nav a.pageCliquez{
+    text-decoration: underline; /*ca me permet de soulignber uniquement les lien qui ont ete cliquer*/
+}
+.titre-principal{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.header-titre{
+    display:flex;
+    flex-direction: column; /*je met les titre en column pour qu'il soit l'un sous l'autre (Cuisine MOMO Cégep Montmorency)*/
 }
 @media (min-width: 1024px){   
     .header{
         display: flex; 
     }
 }
+
+nav ul{
+    display: flex; /*ca place tous les <li> cote a cote sur la meme ligne */
+    justify-content: flex-end;  /*fait en sorte que les liens soit alligner a droite*/
+    align-items: center;  /*je comptrends pas pourquoi je peut pas center les lignes*/
+    padding: 0rem 5rem; /*C'est vraiment lui qui me permet de center les liens*/
+    gap: 1rem;  /* je met l'espace entre les liens(items) */
+    list-style: none; /* pour enlevcer les point6s des liste de liens dans tout les entete*/
+    flex-wrap: nowrap; /*Pour que quand les dimensions change il reste toujours sur la meme ligne*/
+
+
+}
+
+/*ICI je commence les modification pour le footer*/
+
+footer{
+    background-color: rgb(182, 229, 248);
+    
+}
+.info-footer {
+    display:flex;
+    justify-content:flex-start;
+    gap:15rem;/*espace entre les colonne*/
+    margin:auto;
+    padding: 1rem 5rem;
+}
+.titre-footer{ /*je fait la police des titre qui se toruve dans le footer*/
+    font-size:1.1rem;
+    font-weight:bold;
+    color:blue;
+}
+.copyright{
+    text-align: center;
+}
+
