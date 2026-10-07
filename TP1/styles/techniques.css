@@ -30,5 +30,8 @@
 }
 .securite{
     display:grid;
-    grid-column:1;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 10fr));
+    background-color:rgb(217, 247, 217);
+    border-radius: 16px;
+    margin:3rem;
 }
