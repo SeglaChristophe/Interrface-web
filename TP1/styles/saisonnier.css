@@ -1,0 +1,72 @@
+
+
+.entete-page{
+    display:flex;
+    flex-direction: column;
+    background-color: #e3e8f0;
+    text-align:center;
+}
+.titre{
+    color:blue;
+}
+section > h2{
+    text-align:center;
+    color: var(--primary-color);
+}
+.entete-page p{
+    color:gray;
+}
+.tableau{
+    display: flex;
+    justify-content:center;
+    margin-right: 15rem;
+    
+}
+.table{
+    margin: 0 auto;
+    width:80%;
+    min-width: 400px;
+    margin-left: 80px;
+
+}
+.table th,td{
+    text-align:center;
+    padding: 20px 140px;  /*pour mettre de l'espace entre les colonnes*/
+    
+}
+/*pour faire les sorte de badje vert et jaune du tableau*/
+.badge{
+    display:inline-block;
+    justify-content: flex-start;
+    background-color: rgb(171, 236, 171);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 24px; /*ca augmente l'espace interieur*/
+    max-width: 70px;
+    border-radius: 25px;
+    color:green;
+}
+.badge-Jaune{
+    display:inline-block;
+    justify-content: flex-start;
+    background-color: rgb(235, 229, 181);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 24px; /*ca augmente l'espace interieur*/
+    max-width: 70px;
+    border-radius: 25px;
+    color:rgb(209, 181, 25);
+}
+/*je fais la partie de Conseils */
+.les-cartes{
+    display:flex;
+    padding: 2rem 10rem;
+    margin-bottom: 5rem;
+    justify-content: space-between;
+    gap: 1.5rem;
+    text-align:center;
+}
+article h3{
+    text-align:center;
+    color: var(--primary-color);
+}
