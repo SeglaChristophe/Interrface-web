@@ -1,0 +1,63 @@
+
+
+.recette-header{
+    background-color: #e3e8f0;
+    display:flex;
+    flex-direction: column;
+    
+}
+.titre-poutine{
+    font-weight: bolder;
+    margin-left: 5rem;
+    margin-bottom: 0;
+}
+
+
+.info-poutine{
+    display:flex;
+    justify-content: flex-start;
+    gap:3rem;/*espace entre les colonne*/
+    padding: 1rem 5rem;
+}
+.titre-info{
+    font-weight:bolder;
+    color:var( --primary-color);
+    text-align: center;
+}
+.fil-ariane a{
+    text-decoration: none;
+}
+.fil-ariane{
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+}
+.image-principale{
+     padding: 0;
+     margin:4rem;
+}
+.image-principale img{
+    width: 100%; 
+    height: auto; 
+    max-width: 650px;
+    min-height: 950px; 
+    object-fit: cover; 
+    border-radius: 16px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    display: block;
+    
+}
+.imageETdetail{
+    display:flex;
+    justify-content: flex-start;
+}
+.les-details{
+    display:flex;
+    flex-direction: column;
+    margin-right: 25rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    
+}
+.les-details section{
+    
+}
