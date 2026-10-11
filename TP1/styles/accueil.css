@@ -13,7 +13,7 @@
 }
 /*je fait la couleur en bleu pour le titre de hero et vers pour l'apetit*/
 .titre-hero{
-    color:blue;
+    color: var(--primary-color);
 }
 .appetit{
     color:rgb(122, 196, 11);
@@ -71,5 +71,5 @@
     flex-direction: column;
 }
 .carte-contenu h2{
-    color:  #0340aa;
+    color: var(--primary-color);
 }

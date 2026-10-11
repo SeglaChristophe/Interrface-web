@@ -5,7 +5,7 @@
     text-align:center;
 }
 .titre{
-    color:blue;
+    color: var(--primary-color);
 }
 .les-techniques{ 
     display:grid;

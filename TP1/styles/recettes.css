@@ -6,7 +6,7 @@
     margin: 0rem rem;
 }
 .titre-page{
-    color:blue;
+    color: var(--primary-color);
 }
 
 .les-recettes{ 

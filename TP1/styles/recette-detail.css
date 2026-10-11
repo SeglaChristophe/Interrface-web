@@ -58,6 +58,22 @@
     margin-bottom: 0;
     
 }
-.les-details section{
-    
+.conseils > div {
+    background-color: rgb(236, 236, 236);
+    padding: 1.5rem;
+    border-left:6px solid var(--primary-color, #002768);
+    border-radius: 16px; 
+}
+.bouton-retour{
+    margin-left: 4.5rem;
+    background-color: gray;
+    padding: 1rem;
+     display:inline-block;
+    justify-content: flex-start;
+    font-weight: bold;
+    border-radius: 16px; 
+}
+.bouton-retour > a{
+    text-decoration: none;
+    color: white;
 }
