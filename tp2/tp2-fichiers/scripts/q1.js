@@ -4,6 +4,8 @@
  */
 
 // TODO: Déclarez des variables (nombre, string)
+let tempCelsius = "";
+let tempFahrenheit = 0;
 
 /**
  * Convertit une température de Celsius en Fahrenheit
