@@ -14,7 +14,7 @@ let tempFahrenheit = 0;
  */
 function convertirCelsiusVersfahrenheit(celsius) {
     // TODO: Retourner le résultat de la conversion en utilisant l'expression c*9/5+32
-    return undefined;
+    return celsius * 9 / 5 + 32;
 }
 
 /**
@@ -22,10 +22,19 @@ function convertirCelsiusVersfahrenheit(celsius) {
  */
 function initialiser() {
     // TODO: Récupérer les éléments DOM (#c, #go, #out)
-
+     const elemDom_c = document.querySelector("#c");
+     const elemDom_go = document.querySelector("#go");
+     const elemDom_out = document.querySelector("#out");
     // TODO: Au clic sur #go, convertir la valeur de #c et afficher dans #out
-    
+    elemDom_go.addEventListener("click",() => {
+        const valEntrer = Number(elemDom_c.value);
+        const valConverti = convertirCelsiusVersfahrenheit(valEntrer);
+        elemDom_out.textContent = `${valEntrer}°C = ${valConverti}°F`;
+    });
     // TODO: Gérer le cas où l'input est vide (afficher "Veuillez entrer une valeur")
+    if(valEntrer === "" && valEntrer != 0){
+        elemDom_out.textContent = 'Veuillez entrer une valeur';
+    }
 }
 
 // Initialisation au chargement de la page
